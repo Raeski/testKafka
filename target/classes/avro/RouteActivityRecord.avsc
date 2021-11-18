@@ -1,0 +1,171 @@
+[
+  {
+    "type": "record",
+    "name": "RouteActivityRecord",
+    "namespace": "uol.pagseguro.servicedesk.salesforce.routeactivity",
+    "doc": "Agregado de dados do cliente & informações a serem roterizadas pela Imagem",
+    "fields": [
+      {
+        "name": "addressName",
+        "type": "string",
+        "doc": "[PII] Endereço - Nome da rua"
+      },
+      {
+        "name": "addressNumber",
+        "type": "string",
+        "doc": "[PII] Endereço - Numero"
+      },
+      {
+        "name": "addressComplement",
+        "type": ["null","string"],
+        "default": null,
+        "doc": "[PII] Endereço - Complemento"
+      },
+      {
+        "name": "postalCode",
+        "type": "string",
+        "doc": "[PII] Endereço - CEP"
+      },
+      {
+        "name": "city",
+        "type": "string",
+        "doc": "[PII] Endereço - Cidade"
+      },
+      {
+        "name": "state",
+        "type": "string",
+        "doc": "[PII] Endereço - Estado"
+      },
+      {
+        "name": "district",
+        "type": "string",
+        "doc": "[PII] Endereço - Bairro"
+      },
+      {
+        "name": "latitude",
+        "type": ["null","string"],
+        "default": null,
+        "doc": "[PII] Endereço - Latitude"
+      },
+      {
+        "name": "longitude",
+        "type": ["null","string"],
+        "default": null,
+        "doc": "[PII] Endereço - Longitude"
+      },
+      {
+        "name": "mcc",
+        "type": ["null","string"],
+        "default": null,
+        "doc": "[NOT_SECURITY_APPLY] Informações do Cliente - MCC"
+      },
+      {
+        "name": "cnae",
+        "type": ["null","string"],
+        "default": null,
+        "doc": "[NOT_SECURITY_APPLY] Informações do Cliente - CNAE"
+      },
+      {
+        "name": "nameContact",
+        "type": ["null","string"],
+        "default": null,
+        "doc": "[PII] Informações do Cliente - Nome do decisor"
+      },
+      {
+        "name": "presumedRevenue",
+        "type": ["null","double"],
+        "default": null,
+        "doc": "[PII] Informações do Cliente - TPV esperado"
+      },
+      {
+        "name": "responsibleName",
+        "type": ["null", "string"],
+        "default": null,
+        "doc": "[NOT_SECURITY_APPLY] Informações da Área - Nome da regional responsável por este cliente"
+      },
+      {
+        "name": "segment",
+        "type": ["null", "string"],
+        "default": null,
+        "doc": "[PII] Informações do Cliente - Segmento de atuação da empresa"
+      },
+      {
+        "name": "phone",
+        "type": ["null", "string"],
+        "doc": "[PII] Informações do Cliente - Telefone de contato"
+      },
+      {
+        "name": "trademark",
+        "type": "string",
+        "doc": "[PII] Informações do Cliente - Nome fantasia da empresa"
+      },
+      {
+        "name": "portfolioCode",
+        "type": ["null", "long"],
+        "default": null,
+        "doc": "[NOT_SECURITY_APPLY] Informações da Área - Id da sub-regional que enquadra a localização da empresa"
+      },
+      {
+        "name": "routeNumber",
+        "type": "string",
+        "doc": "[NOT_SECURITY_APPLY] Informações de Rota - Id do conjunto de atividades a ser executado pelo executivo (rota)"
+      },
+      {
+        "name": "routeActivityNumber",
+        "type": ["null", "long"],
+        "default": null,
+        "doc": "[NOT_SECURITY_APPLY] Informações da Rota - Id do número da atividade referente a visita dessa empresa"
+      },
+      {
+        "name": "document",
+        "type": "string",
+        "doc": "[PII] Informações do Cliente - CPF/CNPJ da empresa ou cliente"
+      },
+      {
+        "name": "personType",
+        "type": "string",
+        "doc": "[PII] Informações do Cliente - Identificação de pessoa física ou jurídica"
+      },
+      {
+        "name": "customerOrigin",
+        "type": "string",
+        "doc": "[NOT_SECURITY_APPLY] Informações Gerais - Identifica a origem dos dados desse cliente, como chegou a PagSeguro"
+      },
+      {
+        "name": "clientSituation",
+        "type": ["null", "string"],
+        "default": null,
+        "doc": "[NOT_SECURITY_APPLY] Informações Gerais - Caso este seja um cliente gerenciado, traz informações adicionais para auxiliar a visita"
+      },
+      {
+        "name": "alertType",
+        "type": ["null", "string"],
+        "default": null,
+        "doc": "[NOT_SECURITY_APPLY] Informações Gerais - Caso este seja um cliente gerenciado, traz informações de alertas (CHURN, etc..)"
+      },
+      {
+        "name": "isPagsClient",
+        "type": "string",
+        "doc": "[NOT_SECURITY_APPLY] Informações Gerais - Identifica se o cliente já é gerenciado ou não"
+      },
+      {
+        "name": "biggestRevenue",
+        "type": ["null", "double"],
+        "default": null,
+        "doc": "[PII] Informações do Cliente - Maior receita registrada"
+      },
+      {
+        "name": "biggestRevenueDate",
+        "type": ["null", "string"],
+        "default": null,
+        "doc": "[PII] Informações do Cliente - Maior receita registrada"
+      },
+      {
+        "name": "presumedMonthlyTpv",
+        "type": ["null", "double"],
+        "default": null,
+        "doc": "[PII] Informações do Cliente - TPV mensal esperado"
+      }
+    ]
+  }
+]
